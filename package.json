@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Deterministic, token-free Zod v4 schema generation from OpenAPI specs — no LLM hallucinations",
   "type": "module",
+  "author": "Amir Gorji",
   "bin": {
     "openapi-zod": "./dist/index.js",
     "openapi-zod-mcp": "./dist/mcp.js"
@@ -17,8 +18,10 @@
   ],
   "scripts": {
     "build": "tsc --noEmit && node scripts/build.mjs && tsc --emitDeclarationOnly",
-    "typecheck": "tsc --noEmit",
-    "test": "vitest run"
+    "clean": "rm -rf lib",
+    "test": "vitest run",
+    "ts": "tsc --noEmit",
+    "prepublishOnly": "npm run clean && npm run ts && npm test && npm run build"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1",
@@ -32,5 +35,9 @@
     "esbuild": "^0.27.4",
     "typescript": "^5.9.3",
     "vitest": "^4.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amir-gorji/openapi-zod.git"
   }
 }
