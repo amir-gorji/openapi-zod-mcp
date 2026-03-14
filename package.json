@@ -4,6 +4,7 @@
   "description": "Deterministic, token-free Zod v4 schema generation from OpenAPI specs — no LLM hallucinations",
   "type": "module",
   "author": "Amir Gorji",
+  "license": "MIT",
   "bin": {
     "openapi-zod": "./dist/index.js",
     "openapi-zod-mcp": "./dist/mcp.js"
