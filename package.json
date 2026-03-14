@@ -1,6 +1,7 @@
 {
   "name": "openapi-zod",
   "version": "1.0.0",
+  "description": "Deterministic, token-free Zod v4 schema generation from OpenAPI specs — no LLM hallucinations",
   "type": "module",
   "bin": {
     "openapi-zod": "./dist/index.js",
@@ -16,7 +17,8 @@
   ],
   "scripts": {
     "build": "tsc --noEmit && node scripts/build.mjs && tsc --emitDeclarationOnly",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1",
@@ -28,6 +30,7 @@
     "@types/inquirer": "^9.0.9",
     "@types/node": "^25.5.0",
     "esbuild": "^0.27.4",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.0"
   }
 }
