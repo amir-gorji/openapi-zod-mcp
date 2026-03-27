@@ -1,4 +1,4 @@
-# 🚀 OpenAPI Zod MCP Server
+# OpenAPI Zod MCP Server
 
 [![npm version](https://badge.fury.io/js/openapi-zod-mcp.svg)](https://badge.fury.io/js/openapi-zod-mcp)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
